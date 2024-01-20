@@ -1,0 +1,121 @@
+<template>
+<main v-for="item in data" class="">
+    <section class="flex flex-col lg:flex-row gap-3 px-[4%] sm:px-[12%] w-full justify-center">
+        <!-- <div class="flex items-center justify-center"> -->
+            <img :src=" item.image" alt="" class=" rounded-2xl border border-[rgba(20, 183, 224, 0.8)] w-full sm:w-[400px] flex">
+        <!-- </div> -->
+        
+        <div class="flex flex-col gap-4">
+            <div class="bg-green-200">{{ item.name }}</div>
+            <div class="bg-white sm:col-span-1 p-5 border rounded-3xl xl text-[16px]">{{item.description}}</div>
+
+            <div class="grid grid-cols-2 gap-1">
+                <div class=" flex flex-col items-center justify-center rounded-2xl bg-white border">
+                    <div class="flex gap-3 flex-col py-1">
+                        <div class=" p-2 duration-200 font-semibold hover:bg-gray-200 border rounded-lg ">
+                            {{ item.tech1 }}
+                        </div>
+                        <div v-if="item.tech2 " class=" p-2 duration-200 font-semibold hover:bg-gray-200 border rounded-lg">
+                            {{ item.tech2 }}
+                        </div>
+                        <div class=" p-2 duration-200 font-semibold hover:bg-gray-200 border rounded-lg">
+                            {{ item.tech3 }}
+                        </div>
+                        <div class=" p-2 duration-200 font-semibold hover:bg-gray-200 border rounded-lg">
+                            {{ item.tech4 }}
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="bg-gray-200 rounded-2xl flex flex-col w-full justify-center gap-2 text-[20px] px-[10%]">
+                    <a :href="item.website" target="_blank" class=" p-2 site flex items-center gap-1 rounded-lg bg-white justify-center"> 
+                        <div>web</div>
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </a>
+                    <a :href="item.github" target="_blank" class=" p-2 site flex items-center gap-1 rounded-lg bg-white justify-center "> 
+                        <div>github</div>
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+        
+        <!-- <div class="bg-white  p-5 border rounded-3xl">{{item.description}}</div> -->
+    </section>
+    
+    <!-- <img :src=" item.image" alt="" class=" rounded-2xl border border-[rgba(20, 183, 224, 0.8)] max-w[800px] h-[96px] 2xl:h-[132px]"> -->
+    
+</main>
+</template>
+
+<script setup>
+let data = [
+    {
+        "id": 1,
+        "name": "Home-Chef",
+        "image": "/src/images/recipes-two-opal.vercel.app_home (1).png",
+        "description": "This is recipe website that uses the meal DB API with a nice responsive user interface. It uses the mealdb api and googles firebase on the backend. This site provides auth and uses the firestore for data management. This was originaly for a front-end challenge on devChallenges.io, but I changed the original design a bit and connect a backend to it.",
+        "tech1": "Vuejs",
+        "tech3": "Tailwindcss",
+        "tech4": "Firebase",
+        "website": "https://recipes-two-opal.vercel.app/",
+        "github": "https://github.com/woodyrr/recipe-page"
+        
+    },
+    {
+        "id": 2,
+        "name": "Threeb",
+        "image": "/src/images/threeb.vercel.app_ (1).png",
+        "description": "Anime/manga website where user can search for their favorite series to add and save their reading/watching status for next time. This site uses an anime api and taught me how to use use vuejs, Locale storage and apis.",
+        "tech1": "Vuejs",
+        "tech2": "CSS",
+        "tech3": "Tailwindcss",
+        "tech4": "Javascript",
+        "website": "https://threeb.vercel.app/",
+        "github": "https://github.com/woodyrr/TWB"
+        
+    },
+    {
+        "id": 3,
+        "name": "Soleilla",
+        "image": "/src/images/woodyrr.github.io_Soleilla_.png",
+        "description": "An E-commerse application for buying candle, lotion  and tea products.",
+        "tech1": "html",
+        "tech2": "CSS",
+        "tech3": "Tailwindcss",
+        "tech4": "Javascript",
+        "website": "https://woodyrr.github.io/Soleilla/",
+        "github": "https://github.com/woodyrr/Soleilla/tree/main2"
+        
+    },
+    {
+        "id": 4,
+        "name": "Random-Quotes",
+        "image": "/src/images/woodyrr.github.io_random-quotes_.png",
+        "description": "This website was a challenge assigned from devChallenges.io, the site uses an api and made responsive with options to toggle and copy quotes to keyboard.",
+        "tech1": "html",
+        "tech2": "CSS",
+        "tech3": "Tailwindcss",
+        "tech4": "Javascript",
+        "website": "https://woodyrr.github.io/random-quotes/",
+        "github": "https://github.com/woodyrr/random-quotes"
+        
+    },
+    // {
+    //     "id": 5,
+    //     "name": "Simple-homepage",
+    //     "image": "images/woodyrr.github.io_simple-homepage_.png",
+    //     "description": "Just a simple responsive home page With a light and dark mode option",
+    //     "tech1": "html",
+    //     "tech2": "CSS",
+    //     "tech3": "Tailwindcss",
+    //     "tech4": "Javascript",
+    //     "website": "https://woodyrr.github.io/simple-homepage/",
+    //     "github": "https://github.com/woodyrr/simple-homepage"
+        
+    // }
+]
+</script>

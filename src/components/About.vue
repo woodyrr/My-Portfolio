@@ -1,36 +1,34 @@
 <template>
-    <!-- <div>
-        <div class="bg-gradient-to-r from-[#14dbe6] via-white to-indigo-200 inline-block text-transparent bg-clip-text">
-            <h1 class="text-3xl md:text-5xl sm:text-4xl xl:6xl pb-2 sm:pb-8 ">I'M WOODY RAMEY</h1>
-        </div>
-            
-        <p class="py-2 text-base md:text-lg text-gray-300">A <strong class="text-white">Frontend Developer </strong> 
-        building the front end of websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <a href="projects.html"><strong class="text-[#14dbe6]">Projects</strong></a> section.</p>
-        <p class="py-2 text-base md:text-lg text-gray-300">I am a highly motivated developer with the ability to challenge myself and others to develop and solve problems. When i'm not building  beautiful responsive websites, you can find me reading Web Novels or creating side projects that automate my daily life.</p>
-        <div class="flex flex-col gap-2 ">
-            <p class="text-lg font-bold text-[#14dbe6]">I currently work with :</p>
-            <div class="grid grid-flow-row lg:grid-cols-5 grid-cols-4  items-center gap-3 text-white font-semibold text-sm lg:text-lg bg-[#2e313128]">
-                <div class=" p-1">HTML</div>
-                <div class=" p-1">CSS</div>
-                <div class=" p-1">Javascript</div>
-                <div class=" p-1">VueJS</div>
-                <div class=" p-1">Python</div>
-                <div class=" p-1">Django</div>
-                <div class=" p-1">Flask</div>
-                <div class=" p-1">Tailwind</div>
-                <div class=" p-1">Git</div>
-                <div class=" p-1">Github</div>
-            </div>
-            
-        </div>
-        <p class="py-2 text-base md:text-lg text-gray-300">I'm open to <strong class="text-white">Job</strong> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <a href="contact.html"><strong class="text-[#14dbe6]">contact</strong></a> me.</p>
-    </div> -->
-
-    <div>
-        <h1>
+    <div class="sm:col-span-2 bg-green-100 border flex flex-col gap-3 py-2 px-3 justify-center items-start rounded-3xl">
+        <img src="../assets/woodys-bitmoji.png" alt="" srcset="" class=" rounded-lg  max-w[800px] h-[96px] 2xl:h-[132px]" >
+        <h1 class="font-semibold">
             Hello, my name's Woody Ramey.
             I am a highly motivated Front end developer who loves building the front end of websites and Web Applications that lead to the success of the overall product.
-            when I am not coding, I usualy find myself in the kichen improving my baking skills or online reading webnovels. 
+            when I am not coding, I usualy find myself in the kichen improving my baking skills or online reading webnovels.
+            
+            
+            when I am not coding, I usualy find myself in the kichen improving my baking skills or online reading webnovels.
+            when I am not coding, I usualy find myself in the kichen improving my baking skills or online reading webnovels.
         </h1>
     </div>
+    <div class=" bg-white flex items-center justify-center rounded-2xl">
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 py-3 xl:py-0"> 
+            <button class=" p-2 duration-200 font-semibold hover:bg-gray-200 border rounded-lg">HTML</button>
+            <button class=" p-2 duration-200 font-semibold hover:bg-yellow-200 border rounded-lg">Javascript</button>
+            <button class=" p-2 duration-200 font-semibold hover:bg-green-200 border rounded-lg">VueJS</button>
+            <button class=" p-2 duration-200 font-semibold hover:bg-blue-600 border rounded-lg">CSS</button>
+            <button class=" p-2 duration-200 font-semibold hover:bg-blue-200 border rounded-lg">Python</button>
+            <button class=" p-2 duration-200 font-semibold hover:bg-yellow-200 border rounded-lg col-span-2">Firebase database</button>
+            <button class=" p-2 duration-200 font-semibold hover:bg-blue-200 border rounded-lg">Tailwind</button>
+            <button class=" p-2 duration-200 font-semibold hover:bg-green-200 border rounded-lg">Git</button>
+            <button class=" p-2 duration-200 font-semibold hover:bg-black border rounded-lg hover:text-white">Github</button>
+            <button class=" p-2 duration-200 font-semibold hover:bg-yellow-200 border rounded-lg">Nodejs</button>
+        </div>
+    </div>
+    <a href="https://github.com/woodyrr" target="_blank" class="bg-white flex items-center rounded-full sm:rounded-none justify-center sm:rounded-r-full sm:rounded-tr-full ">
+        <i class="fa-brands fa-github p-2  text-[50px] sm:text-[130px] lg:text-[170px] xl:text-[200px] duration-300 hover:text-purple-600 "></i>
+    </a>
+    <a href="https://www.linkedin.com/in/woody-ramey-b84152267/" target="_blank" class="bg-white flex items-center rounded-full  justify-center sm:rounded-3xl">
+        <i class="fa-brands fa-linkedin p-2 text-[50px] sm:text-[70px] lg:text-[100px] xl:text-[100px] duration-300 hover:text-blue-600"></i>
+    </a>
 </template>
