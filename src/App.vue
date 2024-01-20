@@ -80,5 +80,11 @@ let contact = ref(false)
 
   <!-- <RouterView /> -->
 </template>
-
+<style>
+/* img{
+    image-rendering: -webkit-optimize-contrast;
+    object-fit: cover;
+    
+} */
+</style>
 

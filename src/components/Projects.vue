@@ -1,27 +1,27 @@
 <template>
 <main v-for="item in data" class="">
-    <section class="flex flex-col lg:flex-row gap-3 px-[4%] sm:px-[12%] w-full justify-center">
+    <section class="flex flex-col lg:flex-row gap-3 px-[4%] sm:px-[12%] w-full bg-gray-200 py-3">
         <!-- <div class="flex items-center justify-center"> -->
-            <img :src=" item.image" alt="" class=" rounded-2xl border border-[rgba(20, 183, 224, 0.8)] w-full sm:w-[400px] flex">
+        <img :src='item.image' alt="" class=" rounded-2xl border border-[rgba(20, 183, 224, 0.8)] w-full lg:w-[500px] xl:w-[450px]">
         <!-- </div> -->
         
         <div class="flex flex-col gap-4">
-            <div class="bg-green-200">{{ item.name }}</div>
+            <div class="text-[24px] font-bold text-center">{{ item.name }}</div>
             <div class="bg-white sm:col-span-1 p-5 border rounded-3xl xl text-[16px]">{{item.description}}</div>
 
             <div class="grid grid-cols-2 gap-1">
-                <div class=" flex flex-col items-center justify-center rounded-2xl bg-white border">
-                    <div class="flex gap-3 flex-col py-1">
-                        <div class=" p-2 duration-200 font-semibold hover:bg-gray-200 border rounded-lg ">
+                <div class=" flex flex-col px-2 xl:px-[30%] rounded-2xl bg-gray-300 border">
+                    <div class="flex gap-3 flex-col py-1 2xl:text-center">
+                        <div class=" p-2 duration-200 font-semibold bg-green-100 border rounded-lg ">
                             {{ item.tech1 }}
                         </div>
-                        <div v-if="item.tech2 " class=" p-2 duration-200 font-semibold hover:bg-gray-200 border rounded-lg">
+                        <div v-if="item.tech2 " class=" p-2 duration-200 font-semibold bg-green-100 border rounded-lg">
                             {{ item.tech2 }}
                         </div>
-                        <div class=" p-2 duration-200 font-semibold hover:bg-gray-200 border rounded-lg">
+                        <div class=" p-2 duration-200 font-semibold bg-green-100 border rounded-lg">
                             {{ item.tech3 }}
                         </div>
-                        <div class=" p-2 duration-200 font-semibold hover:bg-gray-200 border rounded-lg">
+                        <div class=" p-2 duration-200 font-semibold bg-green-100 border rounded-lg">
                             {{ item.tech4 }}
                         </div>
                         
@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            
+            <!-- <img src="../assets/recipes-two-opal.vercel.app_home (1).png" alt="" srcset=""> -->
         </div>
         
         <!-- <div class="bg-white  p-5 border rounded-3xl">{{item.description}}</div> -->
@@ -52,11 +52,16 @@
 </template>
 
 <script setup>
+import recipes from '../images/recipes-two-opal.vercel.app_home (1).png'
+import threeb from '../images/threeb.vercel.app_ (1).png'
+import Soleilla from '../images/woodyrr.github.io_Soleilla_.png'
+import random from '../images/woodyrr.github.io_random-quotes_.png'
+
 let data = [
     {
         "id": 1,
         "name": "Home-Chef",
-        "image": "/src/images/recipes-two-opal.vercel.app_home (1).png",
+        "image": recipes,
         "description": "This is recipe website that uses the meal DB API with a nice responsive user interface. It uses the mealdb api and googles firebase on the backend. This site provides auth and uses the firestore for data management. This was originaly for a front-end challenge on devChallenges.io, but I changed the original design a bit and connect a backend to it.",
         "tech1": "Vuejs",
         "tech3": "Tailwindcss",
@@ -68,7 +73,7 @@ let data = [
     {
         "id": 2,
         "name": "Threeb",
-        "image": "/src/images/threeb.vercel.app_ (1).png",
+        "image": threeb,
         "description": "Anime/manga website where user can search for their favorite series to add and save their reading/watching status for next time. This site uses an anime api and taught me how to use use vuejs, Locale storage and apis.",
         "tech1": "Vuejs",
         "tech2": "CSS",
@@ -81,8 +86,8 @@ let data = [
     {
         "id": 3,
         "name": "Soleilla",
-        "image": "/src/images/woodyrr.github.io_Soleilla_.png",
-        "description": "An E-commerse application for buying candle, lotion  and tea products.",
+        "image": Soleilla,
+        "description": "An E-commerse application for buying candle, lotion  and tea products. This project has a special place in my heart because I designed it as the project went on.",
         "tech1": "html",
         "tech2": "CSS",
         "tech3": "Tailwindcss",
@@ -94,7 +99,7 @@ let data = [
     {
         "id": 4,
         "name": "Random-Quotes",
-        "image": "/src/images/woodyrr.github.io_random-quotes_.png",
+        "image": random,
         "description": "This website was a challenge assigned from devChallenges.io, the site uses an api and made responsive with options to toggle and copy quotes to keyboard.",
         "tech1": "html",
         "tech2": "CSS",
@@ -103,7 +108,7 @@ let data = [
         "website": "https://woodyrr.github.io/random-quotes/",
         "github": "https://github.com/woodyrr/random-quotes"
         
-    },
+    }
     // {
     //     "id": 5,
     //     "name": "Simple-homepage",
@@ -118,4 +123,5 @@ let data = [
         
     // }
 ]
+
 </script>
