@@ -1,13 +1,13 @@
 <template>
 <main v-for="item in data" class="">
-    <section class="flex flex-col lg:flex-row gap-3 px-[4%] sm:px-[12%] w-full bg-gray-200 py-3">
+    <section class="flex flex-col lg:flex-row gap-3 px-[4%] sm:px-[12%] w-full bg-gray-200 md:bg-transparent py-3 ">
         <!-- <div class="flex items-center justify-center"> -->
         <img :src='item.image' alt="" class=" rounded-2xl border border-[rgba(20, 183, 224, 0.8)] w-full lg:w-[500px] xl:w-[450px]">
         <!-- </div> -->
         
-        <div class="flex flex-col gap-4">
-            <div class="text-[24px] font-bold text-center">{{ item.name }}</div>
-            <div class="bg-white sm:col-span-1 p-5 border rounded-3xl xl text-[16px]">{{item.description}}</div>
+        <div class="flex flex-col gap-4 ">
+            <div class="text-[24px] font-bold text-center ">{{ item.name }}</div>
+            <div class="bg-white sm:col-span-1 p-5 border rounded-3xl xl text-[16px] drop-shadow-xl">{{item.description}}</div>
 
             <div class="grid grid-cols-2 gap-1">
                 <div class=" flex flex-col px-2 xl:px-[30%] rounded-2xl bg-gray-300 border">
@@ -33,7 +33,7 @@
                         <div>web</div>
                         <i class="fa-solid fa-arrow-trend-up"></i>
                     </a>
-                    <a :href="item.github" target="_blank" class=" p-2 site flex items-center gap-1 rounded-lg bg-white justify-center "> 
+                    <a :href="item.github" target="_blank" class=" p-2 site flex items-center gap-1 rounded-lg bg-white justify-center"> 
                         <div>github</div>
                         <i class="fa-brands fa-github"></i>
                     </a>
@@ -62,12 +62,12 @@ let data = [
         "id": 1,
         "name": "Home-Chef",
         "image": recipes,
-        "description": "This is recipe website that uses the meal DB API with a nice responsive user interface. It uses the mealdb api and googles firebase on the backend. This site provides auth and uses the firestore for data management. This was originaly for a front-end challenge on devChallenges.io, but I changed the original design a bit and connect a backend to it.",
+        "description": "This is recipe website that uses the meal DB API with a nice responsive user interface. It uses the mealdb api and googles firebase on the backend. This site provides auth and uses the firestore for data management. This was originaly for a front-end challenge on devChallenges.io, but I changed the original design a bit and connected a backend to it.",
         "tech1": "Vuejs",
         "tech3": "Tailwindcss",
         "tech4": "Firebase",
         "website": "https://recipes-two-opal.vercel.app/",
-        "github": "https://github.com/woodyrr/recipe-page"
+        "github": "https://github.com/woodyrr/recipes"
         
     },
     {
@@ -96,19 +96,19 @@ let data = [
         "github": "https://github.com/woodyrr/Soleilla/tree/main2"
         
     },
-    {
-        "id": 4,
-        "name": "Random-Quotes",
-        "image": random,
-        "description": "This website was a challenge assigned from devChallenges.io, the site uses an api and made responsive with options to toggle and copy quotes to keyboard.",
-        "tech1": "html",
-        "tech2": "CSS",
-        "tech3": "Tailwindcss",
-        "tech4": "Javascript",
-        "website": "https://woodyrr.github.io/random-quotes/",
-        "github": "https://github.com/woodyrr/random-quotes"
+    // {
+    //     "id": 4,
+    //     "name": "Random-Quotes",
+    //     "image": random,
+    //     "description": "This website was a challenge assigned from devChallenges.io, the site uses an api and made responsive with options to toggle and copy quotes to keyboard.",
+    //     "tech1": "html",
+    //     "tech2": "CSS",
+    //     "tech3": "Tailwindcss",
+    //     "tech4": "Javascript",
+    //     "website": "https://woodyrr.github.io/random-quotes/",
+    //     "github": "https://github.com/woodyrr/random-quotes"
         
-    }
+    // }
     // {
     //     "id": 5,
     //     "name": "Simple-homepage",
