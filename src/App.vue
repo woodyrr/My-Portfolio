@@ -58,10 +58,11 @@ let contact = ref(false)
         <button class="px-3 py-1 rounded-xl duration-500 hover:text-gray-400 " :style="{ backgroundColor: buttons[1].backgroundColor}" @click="toggleBackgroundColor(1), project = true, about = false, contact = false">Projects</button>
         <button class="px-3 py-1 rounded-xl duration-500 hover:text-gray-400 " :style="{ backgroundColor: buttons[2].backgroundColor}" @click="toggleBackgroundColor(2), contact = true, project = false, about = false">Contact</button>
       </header>
-      <button id="light/dark" class="flex gap-2 bg-gray-300 px-4 py-2 rounded-xl">
+      <!-- <button id="light/dark" class="flex gap-2 bg-gray-300 px-4 py-2 rounded-xl">
           <i class="fa-solid fa-moon"></i>
           <i class="fa-regular fa-sun"></i>
-      </button>
+      </button> -->
+      <h2 class="text-[17px]">Developer</h2>
     </div>
     <section v-if="project" class="flex flex-col gap-16">
       <projects />

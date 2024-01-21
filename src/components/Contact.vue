@@ -1,6 +1,16 @@
 <template>
-    <section class=" px-[6%] sm:px-[10%] lg:px-[20%] bg-gray-200 py-10 md:h-[80vh]">
-        <h2 class="text-[#555] font-bold pb-[20px]">CONTACT ME</h2>
+    <section class="mx-2 rounded-xl px-[5%] sm:px-[10%] lg:px-[20%] bg-gray-200 py-10 md:h-[80vh]">
+        <div class="flex justify-between pb-[20px]">
+          <h2 class="text-[#555] font-bold ">CONTACT ME</h2>
+          <div class="flex items-center gap-2 text-[#555] font-bold">
+            <div>Copy Email</div>
+            <button @click="copy">
+                <img src="../assets/link.svg" class=" h-5 lg:h-6">
+            </button>
+            
+          </div>
+        </div>
+        
         <form ref="form" @submit.prevent="sendEmail" class="flex flex-col gap-2">
             <label class="text-[18px] lg:text-[20px]">Name:</label>
             <input type="text" name="user_name" placeholder="Enter Your Name" class="p-3 rounded-md  border border-gray-300" required>
@@ -30,6 +40,15 @@ import emailjs from '@emailjs/browser';
       }
     }
   }
+</script>
+<script setup>
+let email = 'woodyramey@icloud.com'
+
+
+let copy =  () =>{
+    navigator.clipboard.writeText(email);
+    alert('Email copied to clipboard');
+}
 </script>
 <style>
 

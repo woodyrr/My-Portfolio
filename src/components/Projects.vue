@@ -72,19 +72,6 @@ let data = [
     },
     {
         "id": 2,
-        "name": "Threeb",
-        "image": threeb,
-        "description": "Anime/manga website where user can search for their favorite series to add and save their reading/watching status for next time. This site uses an anime api and taught me how to use use vuejs, Locale storage and apis.",
-        "tech1": "Vuejs",
-        "tech2": "CSS",
-        "tech3": "Tailwindcss",
-        "tech4": "Javascript",
-        "website": "https://threeb.vercel.app/",
-        "github": "https://github.com/woodyrr/TWB"
-        
-    },
-    {
-        "id": 3,
         "name": "Soleilla",
         "image": Soleilla,
         "description": "An E-commerse application for buying candle, lotion  and tea products. This project has a special place in my heart because I designed it as the project went on.",
@@ -96,6 +83,20 @@ let data = [
         "github": "https://github.com/woodyrr/Soleilla/tree/main2"
         
     },
+    {
+        "id": 3,
+        "name": "Threeb",
+        "image": threeb,
+        "description": "Anime/manga website where user can search for their favorite series to add and save their reading/watching status for next time. This site uses an anime api and taught me how to use use vuejs, Locale storage and apis.",
+        "tech1": "Vuejs",
+        "tech2": "CSS",
+        "tech3": "Tailwindcss",
+        "tech4": "Javascript",
+        "website": "https://threeb.vercel.app/",
+        "github": "https://github.com/woodyrr/TWB"
+        
+    },
+    
     // {
     //     "id": 4,
     //     "name": "Random-Quotes",
