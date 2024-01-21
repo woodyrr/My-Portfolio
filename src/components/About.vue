@@ -5,10 +5,6 @@
             Hello, my name's Woody Ramey.
             I am a highly motivated Front end developer who loves building the front end of websites and Web Applications that lead to the success of the overall product.
             when I am not coding, I usualy find myself in the kichen improving my baking skills or online reading webnovels.
-            
-            
-            when I am not coding, I usualy find myself in the kichen improving my baking skills or online reading webnovels.
-            when I am not coding, I usualy find myself in the kichen improving my baking skills or online reading webnovels.
         </h1>
     </div>
     <div class=" bg-white dark:bg-[rgba(28,59,75,0.65)] flex items-center justify-center rounded-2xl">
