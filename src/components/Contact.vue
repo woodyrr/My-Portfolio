@@ -3,7 +3,7 @@
         <div class="flex justify-between pb-[20px]">
           <h2 class="text-[#555] font-bold ">CONTACT ME</h2>
           <div class="flex items-center gap-2 text-[#555] font-bold">
-            <div>Copy Email</div>
+            <div>Copy My Email</div>
             <button @click="copy">
                 <img src="../assets/link.svg" class=" h-5 lg:h-6">
             </button>
