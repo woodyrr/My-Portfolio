@@ -5,7 +5,7 @@
         <img :src='item.image' alt="" class=" rounded-2xl border border-[rgba(20, 183, 224, 0.8)] w-full lg:w-[500px] xl:w-[450px]">
         <!-- </div> -->
         
-        <div class="flex flex-col gap-4 ">
+        <div class="flex flex-col gap-4 w-full">
             <div class="text-[24px] font-bold text-center ">{{ item.name }}</div>
             <div class="bg-white sm:col-span-1 p-5 border rounded-3xl xl text-[16px] drop-shadow-xl">{{item.description}}</div>
 
@@ -28,7 +28,7 @@
                     </div>
                     
                 </div>
-                <div class="bg-gray-200 rounded-2xl flex flex-col w-full justify-center gap-2 text-[20px] px-[10%]">
+                <div class="bg-gray-200 rounded-2xl flex flex-col w-full justify-center gap-2 text-[20px] px-[10%] w-full">
                     <a :href="item.website" target="_blank" class=" p-2 site flex items-center gap-1 rounded-lg bg-white justify-center"> 
                         <div>web</div>
                         <i class="fa-solid fa-arrow-trend-up"></i>
@@ -54,15 +54,28 @@
 <script setup>
 import recipes from '../images/recipes-two-opal.vercel.app_home (1).png'
 import threeb from '../images/threeb.vercel.app_ (1).png'
+import Takes from '../images/best-takes.vercel.app_.png'
 import Soleilla from '../images/woodyrr.github.io_Soleilla_.png'
 import random from '../images/woodyrr.github.io_random-quotes_.png'
 
 let data = [
     {
+        "id": 0,
+        "name": "Best-Takes",
+        "image": Takes,
+        "description": "Voting app where users can create, vote, and comment about their opinions/passions",
+        "tech1": "Vuejs",
+        "tech3": "Tailwindcss",
+        "tech4": "Firebase",
+        "website": "https://best-takes.vercel.app/",
+        "github": "https://github.com/woodyrr/BestTakes"
+        
+    },
+    {
         "id": 1,
         "name": "Home-Chef",
         "image": recipes,
-        "description": "This is recipe website that uses the meal DB API with a nice responsive user interface. It uses the mealdb api and googles firebase on the backend. This site provides auth and uses the firestore for data management. This was originaly for a front-end challenge on devChallenges.io, but I changed the original design a bit and connected a backend to it.",
+        "description": "Recipe website that uses the meal DB API with a nice responsive user interface. It uses the mealdb api and googles firebase on the backend. This site provides auth and uses the firestore for data management.",
         "tech1": "Vuejs",
         "tech3": "Tailwindcss",
         "tech4": "Firebase",
@@ -74,7 +87,7 @@ let data = [
         "id": 2,
         "name": "Soleilla",
         "image": Soleilla,
-        "description": "An E-commerse application for buying candle, lotion  and tea products. This project has a special place in my heart because I designed it as the project went on.",
+        "description": "An E-commerce application where users can shop for candle, lotion, and tea products",
         "tech1": "html",
         "tech2": "CSS",
         "tech3": "Tailwindcss",
