@@ -75,6 +75,7 @@ let data = [
         "tech5": "Auth",
         "website": "https://best-takes.vercel.app",
         "github": "https://github.com/woodyrr/BestTakes"
+
         
     },
     {
@@ -146,3 +147,4 @@ let data = [
 ]
 
 </script>
+
