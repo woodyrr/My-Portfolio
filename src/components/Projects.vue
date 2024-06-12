@@ -68,7 +68,7 @@ let data = [
         "tech1": "Vuejs",
         "tech3": "Tailwindcss",
         "tech4": "Firebase",
-        "website": "https://recipes-sigma-livid.vercel.app/",
+        "website": "https://best-takes.vercel.app",
         "github": "https://github.com/woodyrr/recipes"
         
     },
