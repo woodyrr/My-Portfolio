@@ -30,22 +30,6 @@ const toggleBackgroundColor = (index) => {
 let project = ref(false)
 let about = ref(true)
 let contact = ref(false)
-// const proj = () =>{
-//   contact = true
-//   about = false
-//   contact = false
-//   console.log("hey")
-// }
-// let abo = function(){
-//   project = false
-//   contact = false
-
-// }
-// const conta = function(){
-//   project = false
-//   about = false
-// }
-
 
 </script>
 
@@ -58,10 +42,6 @@ let contact = ref(false)
         <button class="px-3 py-1 rounded-xl duration-500 hover:text-gray-400 " :style="{ backgroundColor: buttons[1].backgroundColor}" @click="toggleBackgroundColor(1), project = true, about = false, contact = false">Projects</button>
         <button class="px-3 py-1 rounded-xl duration-500 hover:text-gray-400 " :style="{ backgroundColor: buttons[2].backgroundColor}" @click="toggleBackgroundColor(2), contact = true, project = false, about = false">Contact</button>
       </header>
-      <!-- <button id="light/dark" class="flex gap-2 bg-gray-300 px-4 py-2 rounded-xl">
-          <i class="fa-solid fa-moon"></i>
-          <i class="fa-regular fa-sun"></i>
-      </button> -->
       <h2 class="text-[17px]">Developer</h2>
     </div>
     <section v-if="project" class="flex flex-col gap-16">
@@ -70,7 +50,7 @@ let contact = ref(false)
     <section v-else-if="contact" class="">
       <contacts/>
     </section>
-    <section v-else-if="about" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 px-[4%] sm:px-[12%] w-full">
+    <section v-else-if="about" class="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-4 gap-2 sm:gap-3 px-[4%] sm:px-[12%] w-full">
       <abouts />
     </section>
 
@@ -79,7 +59,6 @@ let contact = ref(false)
     
   </section>
 
-  <!-- <RouterView /> -->
 </template>
 <style>
 /* img{
